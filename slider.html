@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="slide2.avif" alt="Image 1">
+                <div class="text-overlay">
+                    <h2>Slide 1</h2>
+                    <button class="register-btn">Register</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="slider1.jpg" alt="Image 2">
+                <div class="text-overlay">
+                    <h2>Slide 2</h2>
+                    <button class="register-btn">Register</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="image3.jpg" alt="Image 3">
+                <div class="text-overlay">
+                    <h2>Slide 3</h2>
+                    <button class="register-btn">Register</button>
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

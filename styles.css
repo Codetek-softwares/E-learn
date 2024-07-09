@@ -1,0 +1,78 @@
+styles.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height:500px; */
+    background-color: #f0f0f0;
+}
+
+.slider-container {
+    position: relative;
+    max-width:700px;
+    /* height: 400px; */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%; 
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.register-btn {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.prev, button.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+button.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}

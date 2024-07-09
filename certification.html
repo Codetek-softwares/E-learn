@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="certification.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LEARN SMART</h1>
+        <nav>
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Syllabus</button>
+                    <div class="dropdown-content">
+                        <a href="Syllubus.html">Java</a>
+                        <a href="python.html">Python</a>
+                        <a href="c.html">C</a>
+                        <a href="html.html">Html&Css</a>
+                    </div>
+                </div>
+                
+                <li><a href="c1.html">Certification</a></li>
+                <li><a href="sai.html">Placements & Pricing</a></li>
+                <li><a href="usefulinkshelpandfaq (1).html">FAQ's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="form.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="certificate">
+            <h2>Certificate of Completion</h2>
+            <p>This is to certify that</p>
+            <STrong><p class="learner-name"></p></STrong>
+            <p>has successfully completed the course</p>
+            <strong><p class="course-name"></p></strong>
+            <p>on</p>
+            <p class="completion-date"></p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const course = params.get('course');
+    const date = new Date(params.get('date')).toLocaleDateString();
+    
+    document.querySelector('.learner-name').textContent = name;
+    document.querySelector('.course-name').textContent = course;
+    document.querySelector('.completion-date').textContent = date;
+});
+
+    </script>
+    <footer>
+        <p>&copy; 2024 Learn smart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+ 

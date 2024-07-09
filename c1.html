@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="c1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: white;">LEARN SMART</h1>
+        <nav>
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Syllabus</button>
+                    <div class="dropdown-content">
+                        <a href="Syllubus.html">Java</a>
+                        <a href="python.html">Python</a>
+                        <a href="c.html">C</a>
+                        <a href="html.html">Html&Css</a>
+                    </div>
+                </div>
+                
+                <li><a href="c1.html">Certification</a></li>
+                <li><a href="sai.html">Placements & Pricing</a></li>
+                <li><a href="usefulinkshelpandfaq (1).html">FAQ's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="form.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Certificate Generator</h1>
+        <form id="certForm">
+            <label for="name">Learner's Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="course">Course Name:</label>
+            <input type="text" id="course" name="course" required>
+            
+            <label for="date">Date of Completion:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <button type="submit">Generate Certificate</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('certForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById('name').value;
+    const course = document.getElementById('course').value;
+    const date = document.getElementById('date').value;
+    
+    const params = new URLSearchParams();
+    params.append('name', name);
+    params.append('course', course);
+    params.append('date', date);
+    
+    window.location.href = `certification.html?${params.toString()}`;
+});
+
+    </script>
+    <footer>
+        <p>&copy; 2024 Learn smart. All rights reserved.</p>
+    </footer>
+</body>
+</html>

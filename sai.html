@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Slider</title>
+    <link rel="stylesheet" href="sai.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LEARN SMART</h1>
+        <nav>
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Syllabus</button>
+                    <div class="dropdown-content">
+                        <a href="Syllubus.html">Java</a>
+                        <a href="python.html">Python</a>
+                        <a href="c.html">C</a>
+                        <a href="html.html">Html&Css</a>
+                    </div>
+                </div>
+                
+                <li><a href="c1.html">Certification</a></li>
+                <li><a href="sai.html">Placements & Pricing</a></li>
+                <li><a href="usefulinkshelpandfaq (1).html">FAQ's</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="form.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="java2.jfif" alt="java" style="height:200px; width: 600px;">
+                <h2>java programming</h2>
+                <p>5999</p>
+            </div>
+            <div class="slide">
+                <img src="python.png" alt="python" style="height:200px; width: 600px;">
+                <h2>python</h2>
+                <p>3999</p>
+            </div>
+            <div class="slide">
+                <img src="clogo3.jpg" alt="c"  style="height:200px; width: 600px;">
+                <h2>c</h2>
+                <p>2999</p>
+            </div>
+            <div class="slide">
+                <img src="saplogo.png" alt="sap" style="height:200px; width: 600px;">
+                <h2>SAP</h2>
+                <p>4999</p>
+                </div>
+                <div class="slide">
+                    <img src="htmlCss.jfif" alt="htmlcss" style="height:200px; width: 600px;">
+                    <h2>html,css</h2>
+                    <p>3999</p>
+                    </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <script src="sai.js"></script>
+    <footer>
+        <p>&copy; 2024 Learn smart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
